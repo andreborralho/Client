@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>FestivAll</title>
+
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <!--meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/-->
+    <!--meta name="apple-mobile-web-app-capable" content="yes" /-->
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css?v2">
+    <style>
+    * { /* Prevent less to complie rgba(0,0,0,0) to transparent*/
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-focus-ring-color: rgba(0, 0, 0, 0);
+    }
+    </style>
+</head>
+
+<body id="frame">
+
+
+    <!-- MAIN HEADER SKELETON -->
+    <header id="header" class="header row shadow" data-role="header">
+        <div id="header_link" class="column">
+            <h1 id="header_title" class="heading0"><img id="logo" src="img/logo.png"> FestivAll</h1>
+            <h2 id="header_subtitle" class="heading2"></h2>
+        </div>
+        <div id="menu_button" class="column fixed centered bdr_l">
+            <a href="#" class="icon_menu"></a>
+        </div>
+    </header>
+
+
+    <!-- ============================== MAIN MENU ===================================== -->
+    <div id="menu" class="menu">
+        <ul class="list">
+            <li><a href="#" id="menu_home_link" class="link">Home</a></li>
+            <li><a href="#" id="menu_search_link" class="link">Pesquisa</a></li>
+        </ul>
+        <ul class="list">
+            <!--<li><a href="#" class="link">Definições</a></li>-->
+            <li><a href="#" id="menu_about_us_link" class="link">Quem somos</a></li>
+            <li><a href="#" id="menu_feedback_link" class="link">Feedback</a></li>
+            <li><a href="#" id="menu_exit_link" class="link">Sair</a></li>
+        </ul>
+    </div>
+
+
+    <!-- ============================== INSTALLER ===================================== -->
+    <div id="installer" class="container" data-role="container">
+        <p class="loading_msg">A carregar os festivais...</p>
+        <div id="movingBallG">
+            <div class="movingBallLineG">
+            </div>
+            <div id="movingBallG_1" class="movingBallG">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ============================== HOMEPAGE ===================================== -->
+    <div id="festivals" class="container" data-role="container">
+        <div id="festivals_page" class="page" data-role="page">
+            <div id="festivals_scroll_wrapper" class="scroll_wrapper">
+                <ul id="festivals_buttons" class="festival_list"></ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ============================== FESTIVAL - before - single (after and in between) ===================================== -->
+    <div id="before_festival" class="container" data-role="container">
+        <div id="before_festival_page" class="page" data-role="page">
+
+            <img class="countdown_bg" src="img/countdown_bg.png">
+            <p id="festival_countdown">
+                <span id="festival_left_word">Faltam</span>
+                <span id="festival_countdown_days"></span>
+                <span id="festival_days_word" class="last-line">dias</span>
+            </p>
+
+            <div class="before_festival_details">
+                <div class="festival_poster">
+                    <img src="" id="festival_poster">
+                </div>
+                <ul class="before_festival_list">
+                    <li>
+                        <span class="icon_arrow"></span>
+                        <span id="festival_days"></span>
+                    </li>
+                    <li>
+                        <span class="icon_arrow"></span>
+                        <span id="festival_city"></span>
+                    </li>
+                    <li>
+                        <span class="icon_arrow"></span>
+                        <span id="festival_price"></span>
+                    </li>
+                </ul>
+            </div>
+
+
+            <nav class="nav_bottom">
+                <ul class="row">
+                    <li class="column">
+                        <a id="before_shows_button" class="item">Bandas</a>
+                    </li>
+                    <li class="column">
+                        <a id="before_lineup_button" class="item">Cartaz</a>
+                    </li>
+                    <li class="column">
+                        <a id="before_info_button" class="item">Info</a>
+                    </li>
+                    <li class="column">
+                        <a id="before_map_button" class="item no_bdr_r">Mapa</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- ============================== FESTIVAL - during - single ===================================== -->
+
+    <div id="during_festival" class="container" data-role="container">
+        <!-- Pages wrap -->
+
+        <div id="during_festival_page" class="page" data-role="page">
+            <div id="during_festival_scroll_wrapper" class="scroll_wrapper">
+                <div id="during_festival_scroller">
+                </div>
+            </div>
+
+            <nav class="nav_bottom">
+                <ul class="row">
+                    <li class="column">
+                        <a href="#" id="during_shows_button" class="item">Bandas</a>
+                    </li>
+                    <li class="column">
+                        <a href="#" id="during_lineup_button" class="item">Cartaz</a>
+                    </li>
+                    <li class="column">
+                        <a href="#" id="during_info_button" class="item">Info</a>
+                    </li>
+                    <li class="column">
+                        <a href="#" id="during_map_button" class="item no_bdr_r">Mapa</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <!-- ============================== SHOWS (bandas) ===================================== -->
+    <div id="shows" class="container" data-role="container">
+        <div id="shows_page" class="page" data-role="page">
+            <div id="shows_scroll_wrapper" class="scroll_wrapper">
+                <ul id="shows_page_list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================== LINEUP (cartaz) ===================================== -->
+    <div id="lineup" class="container" data-role="container">
+
+        <!-- Nav top -->
+        <div id="lineup_day_scroll_wrapper">
+            <ul id="lineup_day_buttons" class="nav_top">
+            </ul>
+        </div>
+
+        <!-- Swipe_bar -->
+        <nav class="swipe_bar row" data-role="swipe_bar">
+            <ul id="lineup_stages_bar" class="swipe_bar_list">
+            </ul>
+        </nav>
+
+        <div id="lineup_frame" class="lineup_frame list">
+        </div>
+    </div>
+
+
+    <!-- ============================== INFO ===================================== -->
+    <div id="info" class="container" data-role="container">
+
+        <!-- Swipe_bar -->
+        <nav class="swipe_bar row">
+            <ul class="swipe_bar_list">
+                <li>
+                    <a id="tickets_nav_item" class="current" href="#">Bilhetes</a>
+                </li>
+                <li>
+                    <a id="transports_nav_item" href="#">Como Chegar</a>
+                </li>
+                <li>
+                    <a id="weather_nav_item" href="#">Tempo</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- ================================ MAP ====================================== -->
+    <div id="map" class="container" data-role="container">
+        <!-- page -->
+        <div id="map_page" class="page" data-role="page"></div>
+    </div>
+
+
+    <!-- ======================================================================================= -->
+    <!-- ============================== SHOW (single band) ===================================== -->
+    <div id="show" class="container" data-role="container">
+
+        <!-- Swipe_bar -->
+        <nav class="swipe_bar row" data-role="swipe_bar">
+            <ul class="swipe_bar_list static">
+                <li>
+                    <a id="show_nav_item" class="current" href="#">Banda</a>
+                </li>
+                <li>
+                    <a id="videos_nav_item" href="#">Vídeos</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- ================================ SEARCH ====================================== -->
+    <div id="search" class="container" data-role="container">
+        <div id="search_page" class="page" data-role="page">
+            <form id="search_input_wrap" class="input_wrap">
+                <input id="search_input" class="input_field" type="text" placeholder="Nome de uma banda..." >
+                <div id="search_button" class="input_button">
+                    <span class="icon_search"></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ================================ SEARCH-RESULTS ====================================== -->
+    <div id="search_results" class="container" data-role="container">
+        <!-- page -->
+        <div id="search_results_page" class="page" data-role="page"></div>
+    </div>
+
+
+    <!-- ================================ ABOUTUS ====================================== -->
+    <div id="about_us" class="container" data-role="container">
+        <div id="about_us_page" class="page" data-role="page">
+            <div id="about_us_scroll_wrapper" class="scroll_wrapper">
+                <div id="about_us_page_list" class="padded">			
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================================ FEEDBACK ====================================== -->
+    <div id="feedback" class="container" data-role="container">
+        <div class="padded">
+            <h2 class="general_heading">Dá-nos a tua opinião!</h2>
+            <p>É bastante importante para melhorarmos a app e não te deixarmos perder no teu festival favorito.</p>
+        </div>
+
+        <form id="feedbackForm">
+            <input id="inputFeedbackAuthor" class="input_field" type="text" placeholder="Nome">
+            <input id="inputFeedbackAuthorEmail" class="input_field" type="text" placeholder="Email (opcional)" >
+            <textarea id="inputFeedbackText" class="textarea" placeholder="Manda o teu bitaite!"></textarea>
+            <div type="submit" id="submitFeedback" class="input_button">
+                <span class="icon_send"></span>
+            </div>
+        </form>
+    </div>
+
+    <!-- ================================ FEEDBACK ====================================== -->
+    <div id="ads_banner" data-role="container">
+        <img id="ad_banner_img" alt="" src="">
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="lib/jq.mobi.js"></script>
+    <script type="text/javascript" src="lib/jq.carousel.js"></script>
+    <script type="text/javascript" src="lib/jq.scroller.js"></script>
+    <script type="text/javascript" src="lib/cordova.android.js"></script>
+    <script type="text/javascript" src="lib/video.js"></script>
+    <script type="text/javascript" src="lib/iscroll.js"></script>
+
+    <!-- Data -->
+    <script type="text/javascript" src="js/navigation.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type='text/javascript' src='js/ads.js'></script>
+
+    <!-- Homepage -->
+    <script type="text/javascript" src="js/festivals.js"></script>
+
+    <!-- Single Festival -->
+    <script type="text/javascript" src="js/festival.js"></script>
+    <script type="text/javascript" src="js/shows.js"></script>
+    <script type="text/javascript" src="js/lineup.js"></script>
+    <script type="text/javascript" src="js/info.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <script type='text/javascript' src='js/search.js'></script>
+    <script type='text/javascript' src='js/feedback.js'></script>
+    <script type='text/javascript' src='js/aboutus.js'></script>
+    <script type='text/javascript' src='js/menu.js'></script>
+
+
+    <!-- Show - Band -->
+    <script type="text/javascript" src="js/show.js"></script>
+    <script type="text/javascript" src="js/videos.js"></script>
+
+</body>
+</html>

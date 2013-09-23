@@ -1,0 +1,152 @@
+.blink {
+  -webkit-animation: blink .75s linear infinite;
+  -moz-animation: blink .75s linear infinite;
+  -ms-animation: blink .75s linear infinite;
+  -o-animation: blink .75s linear infinite;
+  animation: blink .75s linear infinite;
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  50.01% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  50.01% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-ms-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  50.01% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  50.01% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  50.01% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.borderbox {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+.ir {
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+/* Grid Table
+------------------------------------------------------------------------ */
+
+.row {
+  position: relative;
+  display: table;
+  width: 100%;
+}
+.column {
+  display: table-cell;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  vertical-align: middle;
+}
+.column.fixed {
+  width: 70px;
+  text-align: center;
+}
+.one-quarter {
+  width: 25%;
+}
+.one-third {
+  width: 33.33%;
+}
+.hidden {
+  display: none;
+}
+.padded {
+  padding: 10px;
+}
+.centered {
+  text-align: center;
+}
+.valign_top {
+  vertical-align: top !important;
+}
+.bdr_r {
+  border-right: 1px solid #373737;
+}
+.bdr_b {
+  border-bottom: 1px solid #373737;
+}
+.bdr_l {
+  border-left: 1px solid #373737;
+}
+.no_border {
+  border: none !important;
+}
+.no_bdr_r {
+  border-right: none !important;
+}
+.no_padding {
+  padding: 0 !important;
+}

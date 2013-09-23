@@ -1,0 +1,100 @@
+@import 'mixins.less';
+
+.borderbox {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+// Clearfix
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+//Image replacement
+.ir {
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+}
+
+
+
+/* Grid Table
+------------------------------------------------------------------------ */
+.row {
+    position: relative;
+    display: table;
+    width: 100%;
+}
+.column {
+    display: table-cell;
+    .borderbox;
+    .padded;
+    vertical-align: middle;
+    &.fixed {
+        width: 70px;
+        text-align: center;
+    }
+}
+.one-quarter {
+    width: 25%;
+}
+.one-third {
+    width: 33.33%;
+}
+
+
+
+
+
+// ------------------------------------------------------
+
+
+//Hidden
+.hidden {
+    display: none;
+}
+
+// Add padding
+.padded {
+    padding: 10px;
+}
+
+// Center content
+.centered {
+    text-align: center;
+}
+
+
+.valign_top {
+    vertical-align: top !important;
+}
+
+// Border Right, Bottom, Left
+.bdr_r {
+    border-right: 1px solid @grey;
+}
+.bdr_b {
+    border-bottom: 1px solid @grey;
+}
+.bdr_l {
+    border-left: 1px solid @grey;
+}
+
+.no_border {
+    border: none !important;
+}
+.no_bdr_r {
+    border-right: none !important;
+}
+.no_padding {
+    padding: 0 !important;
+}
