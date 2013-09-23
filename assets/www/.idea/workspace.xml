@@ -10,7 +10,7 @@
     <file path="/lineup.js" changelist="4c5fd730-d292-42d2-85bc-f7467deb5041" time="1370106648588" ignored="false" />
     <file path="/navigation.js" changelist="4c5fd730-d292-42d2-85bc-f7467deb5041" time="1369591336206" ignored="false" />
     <file path="/festivals.js" changelist="4c5fd730-d292-42d2-85bc-f7467deb5041" time="1372288793597" ignored="false" />
-    <file path="/show.js" changelist="4c5fd730-d292-42d2-85bc-f7467deb5041" time="1370103289271" ignored="false" />
+    <file path="/show.js" changelist="4c5fd730-d292-42d2-85bc-f7467deb5041" time="1379960819087" ignored="false" />
     <file path="/shows.js" changelist="4c5fd730-d292-42d2-85bc-f7467deb5041" time="1372611686665" ignored="false" />
     <file path="/search.js" changelist="4c5fd730-d292-42d2-85bc-f7467deb5041" time="1370106175892" ignored="false" />
     <file path="/info.js" changelist="4c5fd730-d292-42d2-85bc-f7467deb5041" time="1371925429375" ignored="false" />
@@ -36,10 +36,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="data.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="data.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/data.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="663" selection-end="663" vertical-scroll-proportion="0.66952056">
+            <state line="13" column="40" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="placeholder.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/placeholder.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/show.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="74" column="0" selection-start="3020" selection-end="3020" vertical-scroll-proportion="0.66952056">
               <folding />
             </state>
           </provider>
@@ -83,7 +99,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/js/search.js" />
-        <option value="$PROJECT_DIR$/js/show.js" />
         <option value="$PROJECT_DIR$/js/info.js" />
         <option value="$PROJECT_DIR$/lib/jq.scroller.js" />
         <option value="$PROJECT_DIR$/js/shows.js" />
@@ -96,6 +111,7 @@
         <option value="$PROJECT_DIR$/js/festivals.js" />
         <option value="$PROJECT_DIR$/js/ads.js" />
         <option value="$PROJECT_DIR$/js/data.js" />
+        <option value="$PROJECT_DIR$/js/show.js" />
       </list>
     </option>
   </component>
@@ -215,7 +231,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -300,13 +316,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="292" column="66" selection-start="11583" selection-end="11583" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/jq.scroller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1046" column="69" selection-start="43965" selection-end="43965" vertical-scroll-proportion="0.83150184" />
@@ -315,11 +324,6 @@
     <entry file="file://$PROJECT_DIR$/js/shows.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="79" column="18" selection-start="3520" selection-end="3520" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/show.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="48" selection-start="3385" selection-end="3385" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/info.js">
@@ -361,7 +365,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/ads.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="1402" selection-end="1402" vertical-scroll-proportion="0.7671233" />
+        <state line="39" column="0" selection-start="1402" selection-end="1402" vertical-scroll-proportion="0.7671233">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/navigation.js">
@@ -387,7 +393,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/data.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="663" selection-end="663" vertical-scroll-proportion="0.66952056">
+        <state line="13" column="40" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/placeholder.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/show.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="0" selection-start="3020" selection-end="3020" vertical-scroll-proportion="0.66952056">
           <folding />
         </state>
       </provider>

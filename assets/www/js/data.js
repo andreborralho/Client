@@ -5,8 +5,8 @@ document.addEventListener("deviceready", onDeviceReady, false);
 window.ads = [];
 
 
-localStorage.clear();
-localStorage.setItem("firstRun", "true");
+//localStorage.clear();
+//localStorage.setItem("firstRun", "true");
 
 
 if(localStorage["firstRun"] == undefined || localStorage["firstRun"] == "true"){

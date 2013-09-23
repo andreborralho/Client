@@ -63,8 +63,13 @@ function queryShowSuccess(tx, results) {
 
     $('#header_subtitle').text(show.festival_name);
 
-    if(show.photo != "null" && show.photo != "")
+    if(show.photo != "null" && show.photo != ""){
         $('#show_photo').html('<img width="100%" src="' + show.photo + '">');
+
+        $('#show_photo img').error(function () {
+            $(this).unbind("error").attr("src", "img/placeholder.png").css('height', '40%');
+        });
+    }
 
     $('#show_stage').text(show.stage_name);
 

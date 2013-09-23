@@ -223,7 +223,7 @@ body {
   overflow: visible;
 }
 .visible_with_ads {
-    height: 76%; !important
+  height: 76% !important;
 }
 #ads_banner {
   width: 100%;
